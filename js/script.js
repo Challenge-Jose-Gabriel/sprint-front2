@@ -36,3 +36,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// Validação do formulário de contato
+document.getElementById("contatoForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Evita envio automático
+
+  const nome = document.getElementById("nome").value;
+  const email = document.getElementById("email").value;
+  const mensagem = document.getElementById("mensagem").value;
+
+  if (!nome || !email || !mensagem) {
+    alert("Por favor, preencha todos os campos antes de enviar sua mensagem.");
+    return;
+  }
+
+  alert(`Mensagem enviada com sucesso!\nNome: ${nome}\nEmail: ${email}\nMensagem: ${mensagem}`);
+  
+  // Limpa o formulário após o envio
+  this.reset();
+});
