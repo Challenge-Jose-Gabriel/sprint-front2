@@ -232,3 +232,56 @@ form button {
 form button:hover {
   background-color: #005b9e;
 }
+
+/* Estilização da seção Quem Somos */
+#integrantes {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#integrantes h2 {
+  color: #0072C6;
+}
+
+.integrante {
+  display: inline-block;
+  width: 200px;
+  margin: 20px;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.integrante img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.integrante h3 {
+  margin: 10px 0;
+}
+
+.integrante p {
+  font-size: 14px;
+  color: #555;
+}
+
+.integrante a {
+  display: inline-block;
+  margin-top: 5px;
+  text-decoration: none;
+  color: #0072C6;
+  font-weight: bold;
+}
+
+.integrante a:hover {
+  color: #005b9e;
+}
+
