@@ -119,6 +119,54 @@ form button:hover {
   background-color: #005b9e;
 }
 
+/* Estilização da tabela de consultas */
+#consultas {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#consultas h2 {
+  text-align: center;
+  color: #0072C6;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #0072C6;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+button.cancelar {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+button.cancelar:hover {
+  background-color: #c9302c;
+}
+
 @media screen and (max-width: 600px) {
   nav li {
     display: block;

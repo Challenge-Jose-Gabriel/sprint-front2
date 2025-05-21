@@ -19,6 +19,20 @@ document.getElementById("agendamentoForm").addEventListener("submit", function(e
   }
 
   alert(`Consulta agendada com sucesso!\nNome: ${nome}\nData: ${data}\nHorário: ${hora}\nMédico: ${medico}`);
-  
+
   this.reset();
+});
+
+// Consultas
+document.addEventListener("DOMContentLoaded", function () {
+  // Adiciona funcionalidade para cancelar consultas
+  const botoesCancelar = document.querySelectorAll(".cancelar");
+
+  botoesCancelar.forEach(botao => {
+    botao.addEventListener("click", function () {
+      const linha = botao.parentElement.parentElement;
+      linha.remove();
+      alert("Consulta cancelada com sucesso!");
+    });
+  });
 });
