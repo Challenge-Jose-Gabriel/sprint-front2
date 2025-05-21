@@ -1,0 +1,87 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho e Navegação */
+header {
+  background-color: #0072C6;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Seção Hero */
+#hero {
+  background-color: #e6f2ff;
+  padding: 40px;
+  text-align: center;
+}
+
+button {
+  background-color: #0072C6;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #005b9e;
+}
+
+.imagens-menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre as imagens */
+}
+
+.imagens-menu img {
+  width: 300px; /* Defina o tamanho desejado */
+  height: auto;
+  border-radius: 10px; /* Borda arredondada opcional */
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  margin-top: 40px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+  nav li {
+    display: block;
+    margin: 10px 0;
+  }
+}
