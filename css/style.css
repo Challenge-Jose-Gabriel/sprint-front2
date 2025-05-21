@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +11,6 @@ body {
   line-height: 1.6;
 }
 
-/* Cabeçalho e Navegação */
 header {
   background-color: #0072C6;
   color: #fff;
@@ -35,8 +33,7 @@ nav a {
   font-weight: bold;
 }
 
-/* Seção Hero */
-#hero {
+#apresentacao {
   background-color: #e6f2ff;
   padding: 40px;
   text-align: center;
@@ -59,16 +56,15 @@ button:hover {
 .imagens-menu {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Espaçamento entre as imagens */
+  gap: 20px; 
 }
 
 .imagens-menu img {
-  width: 300px; /* Defina o tamanho desejado */
+  width: 300px; 
   height: auto;
-  border-radius: 10px; /* Borda arredondada opcional */
+  border-radius: 10px; 
 }
 
-/* Rodapé */
 footer {
   background-color: #333;
   color: #fff;
@@ -78,7 +74,51 @@ footer {
   margin-top: 40px;
 }
 
-/* Responsividade */
+/* Estilização do formulário de agendamento */
+#agendamento {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#agendamento h2 {
+  text-align: center;
+  color: #0072C6;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  background-color: #0072C6;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+form button:hover {
+  background-color: #005b9e;
+}
+
 @media screen and (max-width: 600px) {
   nav li {
     display: block;

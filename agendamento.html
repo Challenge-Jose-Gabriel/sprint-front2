@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consultas</title>
+    <link rel="stylesheet" href="css/style.css"><script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Agendamento de Consultas</h1>
+        <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="consultas.html">Consultas</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="integrantes.html">Quem Somos</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="agendamento">
+        <h2>Agende sua Consulta</h2>
+        <form id="agendamentoForm">
+            <label for="nome">Nome do Paciente:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+            
+            <label for="data">Data da Consulta:</label>
+            <input type="date" id="data" name="data" required><br><br>
+            
+            <label for="hora">Horário:</label>
+            <input type="time" id="hora" name="hora" required><br><br>
+            
+            <label for="medico">Médico (especialidade):</label>
+            <select id="medico" name="medico" required>
+            <option value="">Selecione</option>
+            <option value="1">Dr. João - Cardiologia</option>
+            <option value="2">Dra. Maria - Dermatologia</option>
+            <option value="3">Dr. Carlos - Ortopedia</option>
+            </select><br><br>
+            
+            <button type="submit">Agendar Consulta</button>
+        </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Hospital das Clínicas - USP</p>
+    </footer>
+</body>
+</html>
