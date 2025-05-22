@@ -66,12 +66,14 @@ button:hover {
 }
 
 footer {
+  position: fixed;
   background-color: #333;
   color: #fff;
-  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   padding: 10px;
-  position: relative;
-  margin-top: 40px;
+  text-align: center;
 }
 
 /* Estilização do formulário de agendamento */
